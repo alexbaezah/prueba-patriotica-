@@ -1,0 +1,14 @@
+<div class="row">
+<% @tasks.each do |task| %>
+  <div class="col-md-4">
+  <div class="card" style="text-align: center; margin-top: 20px">
+    <img class="card-img-top" src="<%= task.photo %>" >
+    <div class="card-body">
+      <h5 class="card-title"><%= task.name %></h5>
+      <%= link_to 'Detalles', task, class: 'btn btn-light' %>
+      
+    </div>
+  </div>
+  </div>
+<% end %>
+</div>
